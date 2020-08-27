@@ -3,19 +3,19 @@ package com.example.obiad;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    public EditText obiad;
+    TextView obiad;
     Random rand = new Random();
     int x;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        obiad = (EditText) findViewById(R.id.obiad);
+        obiad = (TextView) findViewById(R.id.obiad);
     }
 
     public void click(View view) {
